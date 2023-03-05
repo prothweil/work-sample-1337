@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { FilePicker } from "@components/FilePicker";
-import { MobilePreview } from "@components/MobilePreview";
+import { MobileFunnelPreview } from "@components/MobileFunnelPreview";
 import { RecoilRoot } from "recoil";
 import { Inter } from "next/font/google";
 
@@ -18,7 +18,7 @@ export default function Home() {
       <main className={inter.className}>
         <RecoilRoot>
           <FilePicker />
-          <MobilePreview />
+          <MobileFunnelPreview />
         </RecoilRoot>
       </main>
     </>

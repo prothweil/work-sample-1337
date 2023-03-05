@@ -2,7 +2,7 @@ import { useJsonData } from "@hooks/useJsonData";
 import { ChangeEvent, useRef } from "react";
 
 export const FilePicker = () => {
-  const { setCurrentJsonData } = useJsonData();
+  const { setJsonData } = useJsonData();
   const fileRef = useRef<HTMLInputElement>(null);
 
   const readFile = (event: ChangeEvent) => {
@@ -14,7 +14,9 @@ export const FilePicker = () => {
     fileReader.readAsText(new Blob([files[0]], { type: "application/json" }));
     fileReader.onload = (e) => {
       const result = e.target?.result;
-      if (result) setCurrentJsonData(JSON.parse(result as string));
+      if (result === "undefined") return;
+
+      setJsonData(JSON.parse(result as string));
     };
   };
 
