@@ -5,5 +5,9 @@ interface TextProps {
 }
 
 export const Text = ({ align, color, text }: TextProps) => {
-  return <p style={{ textAlign: align, color: color }}>{text}</p>;
+  return (
+    <p className="text-lg mb-3" style={{ textAlign: align, color: color }}>
+      {text}
+    </p>
+  );
 };

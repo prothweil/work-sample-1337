@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { FilePicker } from "@components/FilePicker";
 import { MobileFunnelPreview } from "@components/MobileFunnelPreview";
 import { RecoilRoot } from "recoil";
 import { Inter } from "next/font/google";
+import { TopBar } from "@components/TopBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +17,10 @@ export default function Home() {
       </Head>
       <main className={inter.className}>
         <RecoilRoot>
-          <FilePicker />
-          <MobileFunnelPreview />
+          <TopBar />
+          <div className="flex justify-center">
+            <MobileFunnelPreview />
+          </div>
         </RecoilRoot>
       </main>
     </>

@@ -22,7 +22,24 @@ export const FilePicker = () => {
 
   return (
     <>
-      <input ref={fileRef} type="file" accept=".json" onChange={readFile} />
+      <label
+        className="block cursor-pointer text-sm py-2 px-4
+  rounded-full border-0
+   font-semibold
+  bg-indigo-50 text-indigo-700
+  hover:bg-indigo-100"
+        htmlFor="files"
+      >
+        Select JSON
+      </label>
+      <input
+        id="files"
+        className="hidden"
+        ref={fileRef}
+        type="file"
+        accept=".json"
+        onChange={readFile}
+      />
     </>
   );
 };
