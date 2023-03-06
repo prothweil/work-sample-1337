@@ -13,6 +13,8 @@ interface ListProps {
 export const List = ({ items }: ListProps) => {
   if (!items) return null;
 
+  const iconDimensionXY = 50;
+
   return (
     <ul className="mb-3">
       {items.map((li, i) => (
@@ -25,8 +27,8 @@ export const List = ({ items }: ListProps) => {
               className="self-center ml-4 mr-4"
               src={li.src}
               alt=""
-              height={50}
-              width={50}
+              height={iconDimensionXY}
+              width={iconDimensionXY}
             />
             <div className="">
               <h3 className="text-lg font-bold">{li.title}</h3>

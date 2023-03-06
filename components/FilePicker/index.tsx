@@ -5,6 +5,9 @@ export const FilePicker = () => {
   const { setJsonData } = useJsonData();
   const fileRef = useRef<HTMLInputElement>(null);
 
+  /**
+   * Read raw file from input, parse as JSON and save the data to state.
+   */
   const readFile = (event: ChangeEvent) => {
     const fileReader = new FileReader();
     const { files } = event.target as HTMLInputElement;

@@ -18,9 +18,7 @@ export default function Home() {
       <main className={inter.className}>
         <RecoilRoot>
           <TopBar />
-          <div className="flex justify-center">
-            <MobileFunnelPreview />
-          </div>
+          <MobileFunnelPreview />
         </RecoilRoot>
       </main>
     </>

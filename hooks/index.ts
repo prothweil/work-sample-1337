@@ -1,3 +1,3 @@
 export { useJsonData } from "./useJsonData";
-export { usePages } from "./usePages";
+export { usePageCount } from "./usePageCount";
 export { useUI } from "./useUI";

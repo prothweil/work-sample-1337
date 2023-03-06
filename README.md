@@ -1,3 +1,11 @@
+## Work sample
+
+I have included the original funnel data JSON example (`example1.json`) and added two VERY simple other examples of my own, that I mainly used to test the overflow scrolling and pagination of the preview container. But why not share them with you as well? :)
+
+You can find those in the `JSON files` folder!
+
+=======
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

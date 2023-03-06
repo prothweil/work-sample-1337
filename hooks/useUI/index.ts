@@ -13,6 +13,10 @@ export const previewDimensionsState = atom<previewDimensions>({
   },
 });
 
+/**
+ * useUI hook that handles setting and sharing UI states
+ * (in this case specifically the preview container dimensions).
+ */
 export const useUI = () => {
   const [previewDimensions, setPreviewDimensions] = useRecoilState(
     previewDimensionsState
